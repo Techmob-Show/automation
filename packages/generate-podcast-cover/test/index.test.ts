@@ -44,13 +44,13 @@ test('Episode title is split over multiple lines if needed', () => {
 })
 
 const getFontStyle = index.__get__('getFontStyle')
-test('Generate font style', () => {
+test('Font style text', () => {
     const fontStyle = getFontStyle(24)
     expect(fontStyle).toBe('bold 24pt Arial')
 })
 
 const getSeasonEpisode = index.__get__('getSeasonEpisode')
-test('Season and episode ', () => {
+test('Season and episode text', () => {
     const seasonEpisode = getSeasonEpisode(99,99)
     expect(seasonEpisode).toBe('S99 / E99')
 })
