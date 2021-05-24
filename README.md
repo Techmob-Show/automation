@@ -4,9 +4,26 @@ This project combines several modules which are powerful by their own but unleas
 
 ## Structure
 
-### Modules
+### Packages
+
+- @tms/generate-podcast-cover
+- @tms/new-anchorfm-episode
+- @tms/post-to-instagram
+- @tms/types
+- @tms/update-website
 
 ### Tasks
+
+- @tms/update-website-and-instagram
+
+## Development
+
+### Local
+
+```
+yarn build
+yarn bootstrap
+```
 
 ## Inspiration
 
@@ -19,8 +36,8 @@ This project combines several modules which are powerful by their own but unleas
 
 ## Todos
 
-- [ ] Extract supabase from modules -> supabase access in task
-- [ ] How to handle global types
-- [ ] How to handle global ts config
+- [x] Extract supabase from modules -> supabase access in task
+- [x] How to handle global types
+- [x] How to handle global ts config
 - [ ] Add options to packages, remove env access and sample files
 - [ ] Consider using https://github.com/TypeStrong/ts-node
