@@ -6,7 +6,7 @@ const URL = 'https://instagram.com/'
 
 export const postToInstagram = async (episode: IEpisode, tags: string, path: string,  options: { email: string; password: string }) => {
     console.info('[FUNCTION] postToInstagram')
-    const browser = await webkit.launch({ })
+    const browser = await webkit.launch()
     const context = await browser.newContext({
         ...iPhone11,
         locale: 'en-US',

@@ -16,4 +16,4 @@ export const updateWebsite = async (episode: IEpisode, options: { webhook: Url }
     return false
 }
 
-const triggerNewBuild = async (webhook: Url) => await axios.get(webhook)
+const triggerNewBuild = async (webhook: Url) => await axios.post(webhook)
