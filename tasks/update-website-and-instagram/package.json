@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@tms/update-website-and-instagram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "files": [
@@ -19,11 +19,11 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.11.15",
-    "@tms/generate-podcast-cover": "^1.0.0",
-    "@tms/new-anchorfm-episode": "^1.0.0",
-    "@tms/post-to-instagram": "^1.0.0",
-    "@tms/types": "^1.0.0",
-    "@tms/update-website": "^1.0.0",
+    "@tms/generate-podcast-cover": "^1.0.1",
+    "@tms/new-anchorfm-episode": "^1.0.1",
+    "@tms/post-to-instagram": "^1.0.1",
+    "@tms/types": "^1.0.1",
+    "@tms/update-website": "^1.0.1",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {

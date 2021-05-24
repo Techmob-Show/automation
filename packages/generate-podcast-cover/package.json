@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@tms/generate-podcast-cover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -17,8 +17,8 @@
     "test": "yarn build && yarn jest"
   },
   "dependencies": {
-    "@tms/post-to-instagram": "^1.0.0",
-    "@tms/types": "^1.0.0",
+    "@tms/post-to-instagram": "^1.0.1",
+    "@tms/types": "^1.0.1",
     "@types/node": "^15.6.0",
     "canvas": "^2.8.0"
   },

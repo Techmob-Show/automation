@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@tms/update-website",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -16,8 +16,8 @@
     "lint": "tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
-    "@tms/post-to-instagram": "^1.0.0",
-    "@tms/types": "^1.0.0",
+    "@tms/post-to-instagram": "^1.0.1",
+    "@tms/types": "^1.0.1",
     "axios": "^0.21.1"
   },
   "devDependencies": {
