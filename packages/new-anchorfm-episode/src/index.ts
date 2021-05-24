@@ -1,6 +1,6 @@
 import Parser from 'rss-parser'
-//TODO @tms/types
-import {Feed, IEpisode, PersistFeed} from "../../types/src/podcast";
+// TODO @tms/types
+import { Feed, IEpisode, PersistFeed } from '@tms/types'
 
 const parser = new Parser()
 

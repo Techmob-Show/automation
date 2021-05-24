@@ -1,12 +1,12 @@
-import {config} from 'dotenv'
+import { config } from 'dotenv'
 import { createClient } from '@supabase/supabase-js'
-import {Feed, IEpisode} from "../../../packages/types/src/podcast";
-import {env} from "./util";
+import { Feed, IEpisode } from '../../../packages/types/src/podcast'
+import { env } from './util'
 
 config()
 
 // TODO should it be initialized and receive secrets from index.ts?
-const supabase = createClient(env("SUPABASE_URL"), env('SUPABASE_KEY'))
+const supabase = createClient(env('SUPABASE_URL'), env('SUPABASE_KEY'))
 
 export const getLastFeed = async (): Promise<Feed> => {
     console.info('[FUNCTION] getLastSavedFeed')

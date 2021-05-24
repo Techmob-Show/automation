@@ -9,10 +9,11 @@
         "semicolon": [true, "never"],
         "quotemark": [true, "single", "avoid-escape"],
         "object-literal-sort-keys": false,
+        "whitespace": [true],
         "max-line-length": [
             true,
             {
-                "limit": 140,
+                "limit": 200,
                 "ignore-pattern": "// {(.*?)}",
                 "check-strings": true,
                 "check-regex": true

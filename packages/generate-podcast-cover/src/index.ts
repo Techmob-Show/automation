@@ -1,6 +1,6 @@
 import { createCanvas, loadImage } from 'canvas'
 import fs from 'fs'
-import {IEpisode} from "../../types/src/podcast";
+import { IEpisode } from '@tms/types'
 
 // inspired by https://flaviocopes.com/canvas-node-generate-image/
 export const generateCover = async (episode: IEpisode, options: { pathTemplate: string, pathOutput: string }): Promise<string | null> => {

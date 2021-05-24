@@ -1,11 +1,8 @@
 {
   "private": true,
   "workspaces": [
-    "@tms/types",
-    "@tms/generate-podcast-cover",
-    "@tms/new-anchor-fm-episode",
-    "@tms/post-to-instagram",
-    "@tms/update-website"
+    "packages/*",
+    "tasks/*"
   ],
   "name": "automation",
   "version": "0.1.0",
@@ -14,6 +11,11 @@
   "repository": "https://github.com/Techmob-Show/automation",
   "author": "Techmob Show",
   "license": "MIT",
+  "scripts":{
+    "lint": "lerna run lint",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build"
+  },
   "devDependencies": {
     "lerna": "^4.0.0"
   }
