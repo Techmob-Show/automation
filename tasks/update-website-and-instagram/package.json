@@ -19,8 +19,8 @@
     "@tms/generate-podcast-cover": "^1.0.0",
     "@tms/new-anchorfm-episode": "^1.0.0",
     "@tms/post-to-instagram": "^1.0.0",
-    "@tms/update-website": "^1.0.0",
     "@tms/types": "^1.0.0",
+    "@tms/update-website": "^1.0.0",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
