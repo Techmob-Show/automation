@@ -4,7 +4,7 @@ import fs from 'fs'
 // @ts-ignore
 import rewire from 'rewire'
 import {IEpisode} from 'types'
-import {createCanvas} from "canvas";
+import {createCanvas} from 'canvas'
 
 const index = rewire(`${process.cwd()}/dist/index`)
 
