@@ -15,7 +15,8 @@
     "lint": "lerna run lint",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "lerna": "^4.0.0"
