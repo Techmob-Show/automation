@@ -27,6 +27,8 @@ export const generateCover = async (episode: IEpisode, options: { pathTemplate: 
             const y = yOffset + index * TITLE_LINE_HEIGHT
             context.fillText(line, OFFSET_X, y, MAX_DRAWABLE_AREA)
         })
+        // TODO output needs to be mime type
+        // IDEA only ask for path without extension and append extension or remove extension if its not jpeg
         const buffer = canvas.toBuffer('image/jpeg')
         fs.writeFileSync(options.pathOutput, buffer)
         return options.pathOutput
@@ -55,7 +57,7 @@ const getTitleLines = (context: any, title: string): string[] => {
     return lines
 }
 
-const getFontStyle = (size: number) => `bold ${size}pt Arial`
+const getFontStyle = (size: number) => `${FONT_WEIGHT} ${size}pt ${FONT_FAMILY}`
 
 const getSeasonEpisode = (season: number, episode: number) => `S${season} / E${episode}`
 
@@ -68,5 +70,9 @@ const MARGIN_BOTTOM = 900
 const TITLE_AREA = SIZE - MARGIN_TOP - (SIZE - MARGIN_BOTTOM)
 const FONT_SIZE_SMALL = 40
 const FONT_SIZE_LARGE = 100
-const FONT_COLOR = '#33181F'
 const TITLE_LINE_HEIGHT = FONT_SIZE_LARGE + 40
+
+// can be options
+const FONT_COLOR = '#33181F'
+const FONT_WEIGHT = 'bold'
+const FONT_FAMILY = 'Arial'
