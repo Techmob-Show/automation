@@ -1,0 +1,8 @@
+*.idea
+*.env
+node_modules
+**/dist
+dist
+results
+.nyc_output
+*.tsbuildinfo

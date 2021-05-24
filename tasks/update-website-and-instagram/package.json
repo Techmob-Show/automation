@@ -1,0 +1,22 @@
+{
+  "name": "@tms/update-website-and-instagram",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^1.11.15",
+    "dotenv": "^10.0.0",
+    "@tms/generate-podcast-cover": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

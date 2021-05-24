@@ -1,0 +1,15 @@
+{
+  "name": "@tms/types",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}

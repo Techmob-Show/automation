@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "workspaces": [
+    "@tms/types",
+    "@tms/generate-podcast-cover",
+    "@tms/new-anchor-fm-episode",
+    "@tms/post-to-instagram",
+    "@tms/update-website"
+  ],
+  "name": "automation",
+  "version": "0.1.0",
+  "description": "Automate the boring stuff.",
+  "main": "index.js",
+  "repository": "https://github.com/Techmob-Show/automation",
+  "author": "Techmob Show",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

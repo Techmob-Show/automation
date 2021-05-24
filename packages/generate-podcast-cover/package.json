@@ -1,0 +1,22 @@
+{
+  "name": "@tms/generate-podcast-cover",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@types/node": "^15.6.0",
+    "canvas": "^2.8.0",
+    "@tms/types": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.4"
+  }
+}
