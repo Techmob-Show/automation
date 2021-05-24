@@ -2,7 +2,7 @@ import { config } from 'dotenv'
 import { getNewEpisode } from '@tms/new-anchorfm-episode'
 import { addEpisode, addNewFeed, getLastFeed } from './supabase'
 import { env } from './util'
-import { updateWebsite } from 'update-website'
+import { updateWebsite } from '@tms/update-website'
 import { generateCover } from '@tms/generate-podcast-cover'
 import { postToInstagram } from '@tms/post-to-instagram'
 

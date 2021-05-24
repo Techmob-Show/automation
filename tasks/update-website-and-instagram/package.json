@@ -7,7 +7,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run clean && npm run compile",
+    "start": "node dist/index.js",
+    "build": "yarn run clean && yarn run compile",
     "clean": "rm -rf ./dist",
     "compile": "tsc -p tsconfig.build.json",
     "lint": "tslint --fix --project ./tsconfig.json"
@@ -17,6 +18,7 @@
     "@tms/generate-podcast-cover": "^1.0.0",
     "@tms/new-anchorfm-episode": "^1.0.0",
     "@tms/post-to-instagram": "^1.0.0",
+    "@tms/update-website": "^1.0.0",
     "@tms/types": "^1.0.0",
     "dotenv": "^10.0.0"
   },

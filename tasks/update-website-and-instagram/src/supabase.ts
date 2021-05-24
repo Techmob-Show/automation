@@ -1,6 +1,6 @@
 import { config } from 'dotenv'
 import { createClient } from '@supabase/supabase-js'
-import { Feed, IEpisode } from '../../../packages/types/src/podcast'
+import { Feed, IEpisode } from '@tms/types'
 import { env } from './util'
 
 config()
