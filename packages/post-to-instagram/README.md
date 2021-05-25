@@ -48,7 +48,7 @@ postToInstagram(title, description, tags, path, options).then(() => console.log(
   - only exists to separate them
 - path: string
   - this has to be a .jpg/.jpeg file otherwise it can't be uploaded to Instagram
-- option: { email: string; password: string; }
+- options: { email: string; password: string; }
   - user credentials are needed to login
 
 *these are combined to one string
