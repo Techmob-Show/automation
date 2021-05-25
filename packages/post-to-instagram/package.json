@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@techmobshow/post-to-instagram",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
