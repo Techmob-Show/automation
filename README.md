@@ -6,15 +6,15 @@ This project combines several modules which are powerful by their own but unleas
 
 ### Packages
 
-- @tms/generate-podcast-cover
-- @tms/new-anchorfm-episode
-- @tms/post-to-instagram
-- @tms/types
-- @tms/update-website
+- @techmobshow/generate-podcast-cover
+- @techmobshow/new-anchorfm-episode
+- @techmobshow/post-to-instagram
+- @techmobshow/types
+- @techmobshow/update-website
 
 ### Tasks
 
-- @tms/update-website-and-instagram
+- @techmobshow/update-website-and-instagram
 
 ## Development
 

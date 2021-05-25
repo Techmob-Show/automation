@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/luha/.nvm/versions/node/v14.16.1/bin/node /Users/luha/.nvm/versions/node/v14.16.1/bin/yarn add @tms/types
+  /Users/luha/.nvm/versions/node/v14.16.1/bin/node /Users/luha/.nvm/versions/node/v14.16.1/bin/yarn add @techmobshow/types
 
 PATH: 
   /Users/luha/.nvm/versions/node/v14.16.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/luha/Development/techmobshow/automation/node_modules/.bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@tms%2ftypes: Not found
+  Error: https://registry.yarnpkg.com/@techmobshow%2ftypes: Not found
       at Request.params.callback [as _callback] (/Users/luha/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/Users/luha/.nvm/versions/node/v14.16.1/lib/node_modules/yarn/lib/cli.js:140662:22)
       at Request.emit (events.js:315:20)
@@ -28,7 +28,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "@tms/new-anchorfm-episode",
+    "name": "@techmobshow/new-anchorfm-episode",
     "version": "1.0.0",
     "main": "dist/index",
     "types": "dist/index",

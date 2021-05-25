@@ -23,7 +23,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "@tms/types",
+    "name": "@techmobshow/types",
     "version": "1.0.0",
     "types": "dist/index",
     "files": [

@@ -1,10 +1,10 @@
 import { config } from 'dotenv'
-import { getNewEpisode } from '@tms/new-anchorfm-episode'
+import { getNewEpisode } from '@techmobshow/new-anchorfm-episode'
 import { addEpisode, addNewFeed, getLastFeed } from './supabase'
 import { env } from './util'
-import { updateWebsite } from '@tms/update-website'
-import { generateCover } from '@tms/generate-podcast-cover'
-import { postToInstagram } from '@tms/post-to-instagram'
+import { updateWebsite } from '@techmobshow/update-website'
+import { generateCover } from '@techmobshow/generate-podcast-cover'
+import { postToInstagram } from '@techmobshow/post-to-instagram'
 
 config()
 

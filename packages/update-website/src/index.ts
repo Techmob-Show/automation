@@ -2,7 +2,7 @@
 
 import axios from 'axios'
 // TODO make imports nice
-import { IEpisode, PersistEpisode, Url } from '@tms/types'
+import { IEpisode, PersistEpisode, Url } from '@techmobshow/types'
 
 export const updateWebsite = async (episode: IEpisode, options: { webhook: Url }, persistEpisode: PersistEpisode): Promise<boolean> => {
     console.info('[FUNCTION] updateWebsite')
