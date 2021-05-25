@@ -4,7 +4,7 @@ import { IEpisode } from '@techmobshow/types'
 const iPhone11 = devices['iPhone 11']
 const URL = 'https://instagram.com/'
 
-export const postToInstagram = async (episode: IEpisode, tags: string, path: string,  options: { email: string; password: string }) => {
+export const postToInstagram = async (title: string, description: string, tags: string, path: string,  options: { email: string; password: string }) => {
     console.info('[FUNCTION] postToInstagram')
     const browser = await webkit.launch()
     const context = await browser.newContext({
@@ -12,7 +12,6 @@ export const postToInstagram = async (episode: IEpisode, tags: string, path: str
         locale: 'en-US',
     })
     const page = await context.newPage()
-    page.setDefaultTimeout(60000)
     page.on('console', (msg) => console.log('Browser: ', msg.text()))
     await page.goto(URL)
     await page.click('text=Accept All')
@@ -28,7 +27,7 @@ export const postToInstagram = async (episode: IEpisode, tags: string, path: str
     console.info('New post')
     await page.setInputFiles('input[type="file"]', path)
     await page.click('text=Next')
-    const caption = `${episode.title.toUpperCase()} - ${episode.description} ${tags}`
+    const caption = `${title.toUpperCase()} - ${description} ${tags}`
     await page.fill('textarea[aria-label="Write a caption…"]', caption)
     console.info('Write caption')
     await page.click('text=Share')
