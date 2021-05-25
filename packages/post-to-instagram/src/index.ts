@@ -1,5 +1,4 @@
 import { devices, webkit } from 'playwright'
-import { IEpisode } from '@techmobshow/types'
 
 const iPhone11 = devices['iPhone 11']
 const URL = 'https://instagram.com/'

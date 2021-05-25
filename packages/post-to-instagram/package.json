@@ -16,7 +16,6 @@
     "lint": "tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
-    "@techmobshow/types": "^1.0.2",
     "playwright": "^1.11.1"
   },
   "devDependencies": {
