@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@techmobshow/update-website",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
