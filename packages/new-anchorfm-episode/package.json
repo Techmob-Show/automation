@@ -16,7 +16,6 @@
     "lint": "tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
-    "@techmobshow/post-to-instagram": "^1.0.2",
     "@techmobshow/types": "^1.0.2",
     "rss-parser": "^3.12.0"
   },

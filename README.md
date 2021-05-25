@@ -33,6 +33,8 @@ yarn bootstrap
 - [Typescript Monorepo](https://medium.com/@NiGhTTraX/how-to-set-up-a-typescript-monorepo-with-lerna-c6acda7d4559)
 - [More Typescript Monorepo Action](https://medium.com/@NiGhTTraX/making-typescript-monorepos-play-nice-with-other-tools-a8d197fdc680)
 - [Types in Monorepos](https://www.reddit.com/r/typescript/comments/c4jfbp/best_way_to_use_common_types_across_monorepo/)
+- [Publish Monorepo](https://macwright.com/2016/07/08/lerna-npm-organizations-new-wave-modularity.html)
+- [npm registry set scope](https://docs.npmjs.com/configuring-your-npm-client-with-your-organization-settings)
 
 ## Todos
 
