@@ -4,6 +4,8 @@ Post images to Instagram via a simple function. That's it.
 
 > This package uses a headless chromium which means it can't run on the client.
 
+## Install
+
 ```
 npm install @techmobshow/post-to-instagram
 yarn add @techmobshow/post-to-instagram
