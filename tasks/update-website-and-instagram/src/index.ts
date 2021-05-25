@@ -18,7 +18,7 @@ const run = async () => {
         const options = {pathTemplate: `${process.cwd()}/static/template.png`, pathOutput: `${process.cwd()}/static/cover.jpeg`}
         const pathCover = await generateCover(newEpisode, options)
         if (pathCover) {
-            await postToInstagram(newEpisode, TAGS, pathCover, {email: env('INSTAGRAM_EMAIL'), password: env('INSTAGRAM_PASSWORD')})
+            await postToInstagram(newEpisode.title, newEpisode.description, TAGS, pathCover, {email: env('INSTAGRAM_EMAIL'), password: env('INSTAGRAM_PASSWORD')})
             console.info('SUCCESS: Website updated and cover posted in instagram.')
         } else {
             console.error("ERROR: Cover couldn't be generated. Nothing was posted. Website was updated.")

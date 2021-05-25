@@ -22,7 +22,6 @@
     "@techmobshow/generate-podcast-cover": "^1.0.3",
     "@techmobshow/new-anchorfm-episode": "^1.0.3",
     "@techmobshow/post-to-instagram": "^1.0.2",
-    "@techmobshow/types": "^1.0.2",
     "@techmobshow/update-website": "^1.0.3",
     "dotenv": "^10.0.0"
   },
