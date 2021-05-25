@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@techmobshow/post-to-instagram",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -16,7 +16,7 @@
     "lint": "tslint --fix --project ./tsconfig.json"
   },
   "dependencies": {
-    "@techmobshow/types": "^1.0.1",
+    "@techmobshow/types": "^1.0.2",
     "playwright": "^1.11.1"
   },
   "devDependencies": {

@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@techmobshow/generate-podcast-cover",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -17,8 +17,8 @@
     "test": "yarn build && yarn jest"
   },
   "dependencies": {
-    "@techmobshow/post-to-instagram": "^1.0.1",
-    "@techmobshow/types": "^1.0.1",
+    "@techmobshow/post-to-instagram": "^1.0.2",
+    "@techmobshow/types": "^1.0.2",
     "@types/node": "^15.6.0",
     "canvas": "^2.8.0"
   },

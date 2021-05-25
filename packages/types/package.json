@@ -3,7 +3,7 @@
     "access": "public"
   },
   "name": "@techmobshow/types",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "types": "dist/index",
   "files": [
     "dist"

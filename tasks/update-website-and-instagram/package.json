@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@techmobshow/update-website-and-instagram",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "files": [
@@ -19,11 +19,11 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^1.11.15",
-    "@techmobshow/generate-podcast-cover": "^1.0.1",
-    "@techmobshow/new-anchorfm-episode": "^1.0.1",
-    "@techmobshow/post-to-instagram": "^1.0.1",
-    "@techmobshow/types": "^1.0.1",
-    "@techmobshow/update-website": "^1.0.1",
+    "@techmobshow/generate-podcast-cover": "^1.0.2",
+    "@techmobshow/new-anchorfm-episode": "^1.0.2",
+    "@techmobshow/post-to-instagram": "^1.0.2",
+    "@techmobshow/types": "^1.0.2",
+    "@techmobshow/update-website": "^1.0.2",
     "dotenv": "^10.0.0"
   },
   "devDependencies": {
