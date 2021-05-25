@@ -1,9 +1,7 @@
 {
-  "publishConfig": {
-    "access": "public"
-  },
   "name": "@techmobshow/update-website",
   "version": "1.0.3",
+  "license": "Apache-2.0",
   "main": "dist/index",
   "types": "dist/index",
   "files": [
@@ -22,6 +20,9 @@
   "devDependencies": {
     "tslint": "^6.1.3",
     "typescript": "^4.2.4"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "gitHead": "f485211a2f56a243a6bd93520f0941af9205c2f6"
 }

@@ -2,8 +2,10 @@
   "private": true,
   "name": "@techmobshow/update-website-and-instagram",
   "version": "1.0.4",
+  "license": "Apache-2.0",
   "main": "dist/index.js",
   "typings": "index.d.ts",
+  "homepage": "https://github.com/Techmob-Show/automation",
   "files": [
     "src",
     "dist/*.js",

@@ -10,7 +10,7 @@
   "main": "index.js",
   "repository": "https://github.com/Techmob-Show/automation",
   "author": "Techmob Show",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts":{
     "lint": "lerna run lint",
     "bootstrap": "lerna bootstrap",
