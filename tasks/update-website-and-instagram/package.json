@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "@techmobshow/update-website-and-instagram",
-  "version": "1.0.5",
+  "version": "1.1.0-alpha.0",
   "license": "Apache-2.0",
   "main": "dist/index.js",
   "typings": "index.d.ts",
@@ -23,7 +23,7 @@
     "@supabase/supabase-js": "^1.11.15",
     "@techmobshow/generate-podcast-cover": "^1.0.5",
     "@techmobshow/new-anchorfm-episode": "^1.0.5",
-    "@techmobshow/post-to-instagram": "^1.0.5",
+    "@techmobshow/post-to-instagram": "^1.1.0-alpha.0",
     "@techmobshow/update-website": "^1.0.5",
     "dotenv": "^10.0.0"
   },
