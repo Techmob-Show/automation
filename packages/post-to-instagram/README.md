@@ -1,5 +1,7 @@
 # Post to Instagram
 
+[![npm](https://img.shields.io/npm/v/@techmobshow/post-to-instagram)](https://www.npmjs.com/package/@techmobshow/post-to-instagram) [![npm bundle size](https://img.shields.io/bundlephobia/min/@techmobshow/post-to-instagram)](https://www.npmjs.com/package/@techmobshow/post-to-instagram) [![GitHub](https://img.shields.io/npm/l/@techmobshow/post-to-instagram)](https://github.com/Techmob-Show/automation/tree/main/packages/post-to-instagram)
+
 Post images to Instagram via a simple function. That's it.
 
 > This package uses a headless chromium which means it can't run on the client.
