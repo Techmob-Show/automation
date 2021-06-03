@@ -2,30 +2,39 @@
 
 This project combines several modules which are powerful by their own but unleash unknown forces when combined, at least for some lazy developers who have a podcast.
 
+## Who is techmobshow?
+
+We are three friends hosting a german podcast - [Techmob Show](https://techmob.show) - where we talk about all the nerd stuff we find interesting. Sometimes talking isn't enough and for that we have to code. All the stuff which automates things for us or was an idea in the podcast will be published under the Techmob Show organization ([GitHub](https://github.com/orgs/Techmob-Show), [npm](https://www.npmjs.com/org/techmobshow), [Docker Hub](https://hub.docker.com/u/techmobshow)).
+
 ## Structure
 
 ### Packages
 
-- @techmobshow/generate-podcast-cover
-- @techmobshow/new-anchorfm-episode
-- @techmobshow/post-to-instagram
-- @techmobshow/types
-- @techmobshow/update-website
+- [@techmobshow/generate-podcast-cover](https://github.com/Techmob-Show/automation/tree/main/packages/generate-podcast-cover)
+- [@techmobshow/new-anchorfm-episode](https://github.com/Techmob-Show/automation/tree/main/packages/new-anchorfm-episode)
+- [@techmobshow/post-to-instagram](https://github.com/Techmob-Show/automation/tree/main/packages/post-to-instagram)
+- [@techmobshow/types](https://github.com/Techmob-Show/automation/tree/main/packages/types)
+- [@techmobshow/update-website](https://github.com/Techmob-Show/automation/tree/main/packages/update-website)
 
 ### Tasks
 
-- @techmobshow/update-website-and-instagram
+- [@techmobshow/update-website-and-instagram](https://github.com/Techmob-Show/automation/tree/main/tasks/update-website-and-instagram)
 
 ## Development
 
 ### Local
 
-```
-yarn build
-yarn bootstrap
+**Root**
+
+```bash
+yarn build # run yarn build in all packages and tasks
+yarn bootstrap # https://github.com/lerna/lerna/tree/main/commands/bootstrap
+yarn lint # lint everything
+yarn test # test everything
+yarn run publish # "run" is required as it conflicts with yarn publish, but we won't lerna publish - https://github.com/lerna/lerna/tree/main/commands/publish
 ```
 
-## Inspiration
+## Links that helped during the setup of this Monorepo
 
 - [Why Monorepo?](https://www.drmaciver.com/2016/10/why-you-should-use-a-single-repository-for-all-your-companys-projects/)
 - [Why and how yarn?](https://classic.yarnpkg.com/en/docs/workspaces)

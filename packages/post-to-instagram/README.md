@@ -25,7 +25,8 @@ Moreover, we believe that such a simple package to automate Instagram via Node c
 
 ### Who is techmobshow?
 
-We are three friends hosting a german podcast - [Techmob Show](https://techmob.show) - where we talk about all the nerd stuff we find interesting. Sometimes talking isn't enough and for that we have to code. All the stuff which automates things for us or was an idea in the podcast will be published under the Techmob Show organization ([GitHub](https://github.com/orgs/Techmob-Show), [npm](https://www.npmjs.com/org/techmobshow), [Docker Hub](https://hub.docker.com/u/techmobshow)).
+Checkout the [root README](https://github.com/Techmob-Show/automation).
+
 
 ## Example
 
@@ -41,6 +42,7 @@ const options = {email: 'my@email.com', password: 'SUPER_SECRET'}
 postToInstagram(title, description, tags, path, options).then(() => console.log('success'))
 ```
 
+See real world example in [update-website-and-instagram](https://github.com/Techmob-Show/automation/blob/main/tasks/update-website-and-instagram/src/index.ts)
 
 ## Parameters
 
@@ -59,4 +61,4 @@ postToInstagram(title, description, tags, path, options).then(() => console.log(
 
 ## Todos
 
-- [ ] Write tests
+- [ ] Find a good way to write tests for playwright. Idea: write tests to see if the instagram layout has changed
