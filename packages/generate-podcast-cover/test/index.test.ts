@@ -60,3 +60,5 @@ test('Season and episode text', () => {
     expect(everythingMissing).toBe(null)
     expect(() => {getSeasonEpisode(99, null)}).toThrow(`If a season is provided there should be also an episode. Season: ${99}, Episode: ${null}`)
 })
+
+// TODO test default styles
