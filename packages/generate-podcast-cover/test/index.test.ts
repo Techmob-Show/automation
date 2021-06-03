@@ -21,14 +21,14 @@ const successOptions = {pathTemplate: `${process.cwd()}/test/template.png`, path
 const errorOptions = {pathTemplate: '', pathOutput:''}
 
 test('Generation was successful', async () => {
-    const pathOutput = await generateCover(successEpisode, successOptions)
+    const pathOutput = await generateCover(successEpisode.title, successEpisode.season, successEpisode.episode, successOptions)
     expect(pathOutput).not.toBeNull()
     expect(pathOutput).toBe(successOptions.pathOutput)
     expect(fs.existsSync(successOptions.pathOutput)).toBe(true)
 })
 
 test('Cover is not generated without input and output path', async () => {
-    const pathOutput = await generateCover(successEpisode, errorOptions)
+    const pathOutput = await generateCover(successEpisode.title, successEpisode.season, successEpisode.episode, errorOptions)
     expect(pathOutput).toBeNull()
 })
 
@@ -36,21 +36,27 @@ const getTitleLines = index.__get__('getTitleLines')
 test('Episode title is split over multiple lines if needed', () => {
     const canvas = createCanvas(1200, 1200)
     const context = canvas.getContext('2d')
-    context.font = getFontStyle(100)
-    const titleLinesLong = getTitleLines(context, 'Test episode over multiple lines with even more text')
+    context.font = getFontStyle(100, 'bold', 'Arial')
+    const titleLinesLong = getTitleLines(context, 'Test episode over multiple lines with even more text', 1100)
+    console.log(titleLinesLong)
     expect(titleLinesLong.length).toBe(4)
-    const titleLinesShort = getTitleLines(context, 'Test')
+    const titleLinesShort = getTitleLines(context, 'Test', 900)
     expect(titleLinesShort.length).toBe(1)
 })
 
 const getFontStyle = index.__get__('getFontStyle')
 test('Font style text', () => {
-    const fontStyle = getFontStyle(24)
+    const fontStyle = getFontStyle(24, 'bold', 'Arial')
     expect(fontStyle).toBe('bold 24pt Arial')
 })
 
 const getSeasonEpisode = index.__get__('getSeasonEpisode')
 test('Season and episode text', () => {
-    const seasonEpisode = getSeasonEpisode(99,99)
-    expect(seasonEpisode).toBe('S99 / E99')
+    const everythingProvided = getSeasonEpisode(99,99)
+    expect(everythingProvided).toBe('S99 / E99')
+    const seasonMissing = getSeasonEpisode(null,99)
+    expect(seasonMissing).toBe('99')
+    const everythingMissing = getSeasonEpisode(null, null)
+    expect(everythingMissing).toBe(null)
+    expect(() => {getSeasonEpisode(99, null)}).toThrow(`If a season is provided there should be also an episode. Season: ${99}, Episode: ${null}`)
 })

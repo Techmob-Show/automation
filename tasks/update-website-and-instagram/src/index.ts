@@ -16,7 +16,7 @@ const run = async () => {
         console.info('New episode was detected.')
         await updateWebsite(newEpisode, {webhook: env('WEBHOOK_WEBSITE')}, addEpisode)
         const options = {pathTemplate: `${process.cwd()}/static/template.png`, pathOutput: `${process.cwd()}/static/cover.jpeg`}
-        const pathCover = await generateCover(newEpisode, options)
+        const pathCover = await generateCover(newEpisode.title, newEpisode.season, newEpisode.episode, options)
         if (pathCover) {
             await postToInstagram(newEpisode.title, newEpisode.description, TAGS, pathCover, {email: env('INSTAGRAM_EMAIL'), password: env('INSTAGRAM_PASSWORD')})
             console.info('SUCCESS: Website updated and cover posted in instagram.')
